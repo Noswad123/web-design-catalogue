@@ -1,0 +1,66 @@
+$primary-color: #09335D;
+$secondary-color: white;
+
+*{
+    margin:0;
+}
+#navbar{
+    background-color: $primary-color;
+    height: 3em;
+    margin: 0em;
+#menu{
+  
+
+    li{
+       
+        text-align:center;
+        color:white;
+        padding: 10px 14px 0px 0px;
+        margin-bottom: .5em;
+        position: relative;
+        list-style: none;
+        float:left;
+                
+        ul{
+            display: block;
+            position:absolute;
+            padding:0;
+            background-color:gray;
+           
+                padding-top:.7em;
+                
+            
+            li{
+                display:none;
+                overflow-y: visible;
+                width: 100%;
+                padding:0;
+               
+                a{
+                    text-decoration: none;
+                   color:white;
+                }
+               
+            }
+            li:hover{
+                background-color: black;
+               
+            }
+        }
+        
+    }
+    li:hover{
+        ul{
+            
+            li{
+                display: block;
+
+            }
+        }
+    }
+
+}
+  
+    }
+
+

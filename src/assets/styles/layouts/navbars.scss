@@ -1,0 +1,21 @@
+.fixednav{
+    background-color:grey;
+    height:50px;
+    width:100%;
+    display:flex;
+    position: fixed;
+    align-items: center;
+ul {
+    padding: 10px;
+    margin-left: 10px;
+    
+   
+   li { 
+    display: inline;
+       border-style: solid;
+       border-width: 1px;
+       background-color: red;
+       padding:4px;
+   } 
+}
+}

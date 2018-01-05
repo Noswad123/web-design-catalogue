@@ -1,0 +1,237 @@
+<div class="container">
+  <div class="layout">
+    <div *ngIf="selectedLayout.name=='default'" class="default">
+      (Pick a Layout from the menu on the left.)
+    </div>
+    <div *ngIf="selectedLayout.name=='Three-boxes'" class="three-boxes">
+      <div class="header">
+        <div class="logo">
+
+          <span></span>
+        </div>
+        <div class="menu">
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+        </div>
+      </div>
+      <div class="main">
+
+      </div>
+      <div class="sub-columns">
+        <div class="column"></div>
+        <div class="column"></div>
+      </div>
+    </div>
+    <div *ngIf="selectedLayout.name=='3D screenshots'" class="screenshots">
+      <div class="header">
+        <div class="logo">
+          <span></span>
+        </div>
+        <div class="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="text">
+        <div class="title"></div>
+        <div class="ptag"></div>
+        <div class="ptag"></div>
+      </div>
+      <div class="feature">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+      </div>
+    </div>
+
+    <div *ngIf="selectedLayout.name=='featured graphic'" class="f-graphic">
+      <div class="wrapper">
+        <div class="header"></div>
+        <div class="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="text">
+          <div class="title"></div>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+
+        </div>
+
+      </div>
+      <div class="circle"></div>
+    </div>
+
+    <div *ngIf="selectedLayout.name=='fixed sidebar'" class="f-sidebar">
+      <div class="exsidebar">
+        <div class="logo"></div>
+        <div class="links">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+      </div>
+      <div class="wrapper">
+        <div class="title"></div>
+        <div class="main"></div>
+        <div class="sub-columns">
+          <div class="column"></div>
+          <div class="column"></div>
+          <div class="column"></div>
+        </div>
+        <div class="footer"></div>
+      </div>
+    </div>
+    <div *ngIf="selectedLayout.name=='headline and gallery'" class="h-gallery">
+      <div class="nav">
+        <div class="logo"></div>
+        <div class="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="header"></div>
+      <div class="text"></div>
+      <div class="text"></div>
+      <div class="gallery">
+        <div class="pic"></div>
+        <div class="pic"></div>
+        <div class="pic"></div>
+        <div class="pic"></div>
+        <div class="pic"></div>
+        <div class="pic"></div>
+        <div class="pic"></div>
+        <div class="pic"></div>
+        <div class="pic"></div>
+        <div class="pic"></div>
+        <div class="pic"></div>
+        <div class="pic"></div>
+      </div>
+    </div>
+    <div *ngIf="selectedLayout.name=='featured photo'" class="f-photo">
+      <div class="exsidebar">
+        <div class="logo"></div>
+        <div class="text">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="footer"></div>
+      </div>
+      <div class="pic"></div>
+
+    </div>
+    <div *ngIf="selectedLayout.name=='full screen photo'" class="fs-photo">
+      <div class="wrapper">
+        <div class="section1">
+
+          <div class="title"></div>
+
+          <div class="text">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+        </div>
+        <div class="section2">
+          <div class="column">
+            <div class="title"></div>
+
+            <div class="text">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="pic"></div>
+        </div>
+        <div class="section3">
+          <div class="pic"></div>
+          <div class="logo"></div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="selectedLayout.name=='power grid'" class="p-grid">
+      <div class="row1">
+        <div class="wrapper">
+          <div class="logo"></div>
+          <div class="headline"></div>
+        </div>
+        <div class="searchbar"></div>
+      </div>
+      <div class="nav"></div>
+      <div class="row2">
+        <div class="column"></div>
+        <div class="column"></div>
+      </div>
+      <div class="big-wrapper">
+      <div class="wrapper">
+        <div class="gallery">
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+        </div>
+        <div class="duo">
+          <div class="feature">
+            <div class="title"></div>
+            <div class="pic"></div>
+          </div>
+          <div class="feature">
+            <div class="title"></div>
+            <div class="pic"></div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="exsidebar"></div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="sidebar">
+
+    <div class="links">
+      <h2>Layouts</h2>
+      <button (click)="changeLayout('Three-boxes')">Three-boxes</button>
+      <button (click)="changeLayout('3D screenshots')">3D Screen Shots</button>
+      <button (click)="changeLayout('featured graphic')">Featured Graphic</button>
+      <button (click)="changeLayout('fixed sidebar')">Fixed Sidebar</button>
+      <button (click)="changeLayout('headline and gallery')">Headline and Gallery</button>
+      <button (click)="changeLayout('featured photo')">Featured Photo</button>
+      <button (click)="changeLayout('full screen photo')">Full Screen Photo</button>
+      <button (click)="changeLayout('power grid')">Power Grid</button>
+
+    </div>
+
+    <div class="placeholder">
+      <div *ngIf="selectedLayout.name!='default'" class="description">
+        <h3>{{selectedLayout.name}}</h3>
+        <p>{{selectedLayout.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>
